@@ -1,6 +1,6 @@
 # ReactJs + Hooks + Redux - Build an app like Trello
 
-##Requirements
+## Requirements
 
 - **nodejs >= 14.7.0**
 - **npm >= 6.14.7**
