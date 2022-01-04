@@ -1,10 +1,10 @@
-import Card from "components/Card/Card";
-import React from "react";
-import { mapOrder } from "utils/sorts";
-import "./Column.scss";
+import Card from 'components/Card/Card'
+import React from 'react'
+import { mapOrder } from 'utils/sorts'
+import './Column.scss'
 
 export default function Column({ column }) {
-  const cards = mapOrder(column.cards, column.cardOrder, "id");
+  const cards = mapOrder(column.cards, column.cardOrder, 'id')
   return (
     <div className="column">
       <header>{column.title}</header>
@@ -15,5 +15,5 @@ export default function Column({ column }) {
       </ul>
       <footer>Add another cart</footer>
     </div>
-  );
+  )
 }

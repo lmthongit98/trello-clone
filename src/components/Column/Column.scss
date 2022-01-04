@@ -1,4 +1,4 @@
-@import "_setting.scss";
+@import '_setting.scss';
 
 $column-header-height: 36px;
 $column-footer-height: 36px;
@@ -38,9 +38,7 @@ $list-bg-color: #ebecf0;
   ul.card-list {
     list-style-type: none;
     margin: 0;
-    max-height: calc(
-      100% - #{$column-header-height} - #{$column-footer-height}
-    );
+    max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
     overflow-y: auto; // scroll y
     &::-webkit-scrollbar {
       -webkit-appearance: none;
