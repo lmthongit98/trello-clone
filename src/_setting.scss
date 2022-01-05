@@ -4,13 +4,18 @@ $gap: 10px;
 * {
   box-sizing: border-box;
 }
-//Height = 100vh
+// Height = 99vh, 1vh for scroll bar
 $navbar-app-height: 6vh;
 $navbar-board-height: 7vh;
-$board-content-height: 87vh;
+$board-content-height: 86vh;
 
+// colors
 $board-bg-color: #0079bf;
 $common-element-bg: rgba(255, 255, 255, 0.24);
+$app-main-text-color: #333;
+
+// border radius
+$card-border-radius: 3px;
 
 // Screen
 $screen-lg: 1201px;
