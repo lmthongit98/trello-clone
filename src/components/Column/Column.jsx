@@ -101,7 +101,7 @@ export default function Column({ column, onCardDrop, onUpdateColumn }) {
           <Dropdown>
             <Dropdown.Toggle className="dropdown-btn" id="dropdown-basic" size="sm" />
             <Dropdown.Menu>
-              <Dropdown.Item>Add card...</Dropdown.Item>
+              <Dropdown.Item onClick={toggleOpenNewCardForm}>Add card...</Dropdown.Item>
               <Dropdown.Item onClick={toggleShowConfirmModal}>Remove column</Dropdown.Item>
               <Dropdown.Item>Move all cards in this column(beta)</Dropdown.Item>
               <Dropdown.Item>Archie all cards in this column(beta)</Dropdown.Item>
