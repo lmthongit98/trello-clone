@@ -46,6 +46,9 @@
     padding: 4px 10px;
     input.input-enter-new-column {
       margin: 5px 0;
+      &:focus {
+        border-color: $input-border-color;
+      }
     }
     span.cancel-new-column {
       margin-left: $gap;
