@@ -12,8 +12,12 @@ export default function BoardContent() {
   const [board, setBoard] = useState({})
   const [columns, setColumns] = useState([])
   const [openNewColumnForm, setOpenNewColumnForm] = useState(false)
-  const [newColumnTitle, setNewColumnTitle] = useState('')
   const newColumnInputRef = useRef(null)
+  const [newColumnTitle, setNewColumnTitle] = useState('')
+
+  const toggleOpenNewColumnForm = () => {
+    setOpenNewColumnForm(!openNewColumnForm)
+  }
 
   useEffect(() => {
     const boardFormDB = initialData.boards.find((board) => board.id === 'board-1')
@@ -55,10 +59,6 @@ export default function BoardContent() {
       currentColumn.cardOrder = currentColumn.cards.map((item) => item.id)
       setColumns(newColumns)
     }
-  }
-
-  const toggleOpenNewColumnForm = () => {
-    setOpenNewColumnForm(!openNewColumnForm)
   }
 
   const handleNewColumnTitleChange = (e) => {
@@ -145,7 +145,7 @@ export default function BoardContent() {
               <Button onClick={addNewColumn} variant="success" size="sm">
                 Add column
               </Button>
-              <span onClick={toggleOpenNewColumnForm} className="cancel-new-column">
+              <span onClick={toggleOpenNewColumnForm} className="cancel-icon">
                 <i className="fa fa-trash icon"></i>
               </span>
             </Col>

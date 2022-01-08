@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
 import HTMLReactParser from 'html-react-parser'
+import React from 'react'
+import { Button, Modal } from 'react-bootstrap'
 import { MODAL_ACTION_CLOSE, MODAL_ACTION_CONFIRM } from 'utils/constants'
 
 export default function ConfirmModal(props) {
